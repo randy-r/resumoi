@@ -62,3 +62,9 @@ ul li {
   color: var(--c-text-010);
   background: var(--c-primary-400);
 }
+
+a,
+a:visited {
+  color: var(--c-primary-400);
+  /* text-decoration-color: var(--c-neutral-050); */
+}

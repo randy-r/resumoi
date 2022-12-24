@@ -25,95 +25,111 @@
     <div class="mainbg"></div>
     <main>
       <section class="info">
-        <h1>jon doe</h1>
-        <aside class="contact">
-          <a>website</a>
-          <a>github</a>
-          <a>linkedin</a>
-          <span class="email">email</span>
-          <span class="location">remote</span>
-        </aside>
+        <div class="contact contact-classic">
+          <span class="email">jondoe@doe.jon</span>
+          <a href="#" target="_blank" rel="noreferrer noopener"
+            >jontheseconddoe.doe</a
+          >
+          <span class="location">location: remote</span>
+        </div>
+        <div class="info__name_and_social">
+          <h1>jon doe</h1>
+          <div class="contact contact-social">
+            <a href="#" target="_blank" rel="noreferrer noopener">github</a>
+            <a href="#" target="_blank" rel="noreferrer noopener">linkedin</a>
+          </div>
+        </div>
       </section>
       <section class="timeline">
         <h2>Experience</h2>
-        <article class="timeline__card">
-          <h3 class="timeline__card__title">Javascript Software Engineer</h3>
-          <div class="timeline__card__subtitle">
-            <div class="period">February 2019 to Present</div>
-            <div class="employer-and-location">Meta, London</div>
-          </div>
-          <h4>Projects</h4>
-          <ul class="projects-list">
-            <li class="project">
-              <h5>Instagram stories</h5>
-              <div class="label">Responsabilities</div>
-              <ul class="responsibilities-list">
-                <li>Implement side scroll</li>
-                <li>Display number of views</li>
-              </ul>
-              <div class="label">Stack/Tools</div>
-              <ul class="stack-list">
-                <li>React</li>
-                <li>Graphql</li>
-              </ul>
-            </li>
-            <li class="project">
-              <h5>Like system</h5>
-              <div class="label">Responsabilities</div>
-              <ul class="responsibilities-list">
-                <li>Persist likes</li>
-                <li>Feed user likes into the timeline suggestion algorithm</li>
-              </ul>
-              <div class="label">Stack/Tools</div>
-              <ul class="stack-list">
-                <li>Node</li>
-                <li>Express</li>
-                <li>MongoDB</li>
-              </ul>
-            </li>
-          </ul>
-        </article>
-        <article class="timeline__card">
-          <h3 class="timeline__card__title">.NET Software Developer</h3>
-          <div class="timeline__card__subtitle">
-            <div class="period">Juy 2018 to January 2019</div>
-            <div class="employer-and-location">Microsoft, Oslo</div>
-          </div>
-          <h4>Projects</h4>
-          <ul class="projects-list">
-            <li class="project">
-              <h5>Teams desktop application</h5>
-              <div class="label">Responsabilities</div>
-              <ul class="responsibilities-list">
-                <li>Refactor room joining</li>
-              </ul>
-              <div class="label">Stack/Tools</div>
-              <ul class="stack-list">
-                <li>T-SQL</li>
-                <li>Entity Framework</li>
-              </ul>
-            </li>
-          </ul>
-        </article>
-        <h2>Skills</h2>
-        <article class="timeline__card">
-          <div class="other-skills">
-            <ul class="stack-list">
-              <li>TDD</li>
-              <li>Redis</li>
-            </ul>
-          </div>
-        </article>
-        <h2>Education</h2>
-        <article class="timeline__card">
-          <h3 class="timeline__card__title">Bachelor's in Computer Science</h3>
-          <div class="timeline__card__subtitle">
-            <div class="period">October 2005 to June 2009</div>
-            <div class="employer-and-location">
-              University of Cambridge, United Kingdom
+        <section class="timeline__category">
+          <article class="timeline__card">
+            <h3 class="timeline__card__title">Javascript Software Engineer</h3>
+            <div class="timeline__card__subtitle">
+              <div class="period">February 2019 to Present</div>
+              <div class="employer-and-location">Meta, London</div>
             </div>
-          </div>
-        </article>
+            <h4>Projects</h4>
+            <ul class="projects-list">
+              <li class="project">
+                <h5>Instagram stories</h5>
+                <div class="label">Responsabilities</div>
+                <ul class="responsibilities-list">
+                  <li>Implement side scroll</li>
+                  <li>Display number of views</li>
+                </ul>
+                <div class="label">Stack/Tools</div>
+                <ul class="stack-list">
+                  <li>React</li>
+                  <li>Graphql</li>
+                </ul>
+              </li>
+              <li class="project">
+                <h5>Like system</h5>
+                <div class="label">Responsabilities</div>
+                <ul class="responsibilities-list">
+                  <li>Persist likes</li>
+                  <li>Send the likes a picture receives from the users to the suggestion algorithm.
+                  </li>
+                </ul>
+                <div class="label">Stack/Tools</div>
+                <ul class="stack-list">
+                  <li>Node</li>
+                  <li>Express</li>
+                  <li>MongoDB</li>
+                </ul>
+              </li>
+            </ul>
+          </article>
+          <article class="timeline__card">
+            <h3 class="timeline__card__title">.NET Software Developer</h3>
+            <div class="timeline__card__subtitle">
+              <div class="period">Juy 2018 to January 2019</div>
+              <div class="employer-and-location">Microsoft, Oslo</div>
+            </div>
+            <h4>Projects</h4>
+            <ul class="projects-list">
+              <li class="project">
+                <h5>Teams desktop application</h5>
+                <div class="label">Responsabilities</div>
+                <ul class="responsibilities-list">
+                  <li>Refactor room joining</li>
+                </ul>
+                <div class="label">Stack/Tools</div>
+                <ul class="stack-list">
+                  <li>T-SQL</li>
+                  <li>Entity Framework</li>
+                </ul>
+              </li>
+            </ul>
+          </article>
+        </section>
+        <h2>Skills</h2>
+        <section class="timeline__category">
+          <article class="timeline__card">
+            <div class="other-skills">
+              <p>Additional knowledge and experience with:</p>
+              <ul class="stack-list">
+                <li>TDD</li>
+                <li>Redis</li>
+              </ul>
+            </div>
+          </article>
+        </section>
+        <h2>Education</h2>
+        <section class="timeline__category">
+          <article class="timeline__card">
+            <h3 class="timeline__card__title">
+              Bachelor's in Computer Science
+            </h3>
+            <div class="timeline__card__subtitle">
+              <div class="period">October 2005 to June 2009</div>
+              <div class="employer-and-location">
+                University of Cambridge, United Kingdom
+              </div>
+            </div>
+          </article>
+        </section>
       </section>
     </main>
     <!-- <script type="module" src="/src/main.ts"></script> -->

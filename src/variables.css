@@ -1,0 +1,8 @@
+:root {
+  --c-text-400: #1a1a1a;
+  --c-text-300: #4a4a4a;
+  --c-text-010: #fafafa;
+  --c-surface-100: #fafafa;
+  --c-primary-400: rgb(0, 111, 100);
+  --c-neutral-050: hsl(0, 0%, 88%);
+}

@@ -4,25 +4,118 @@
     <meta charset="UTF-8" />
     <link
       rel="stylesheet"
-      href="https://fonts.googleapis.com/css?family=Bitter"
+      href="https://fonts.googleapis.com/css?family=Bitter:400,700"
     />
     <link
       rel="stylesheet"
-      href="https://fonts.googleapis.com/css?family=PT+Sans"
+      href="https://fonts.googleapis.com/css?family=PT+Sans:400,700"
     />
 
     <link rel="icon" type="image/svg+xml" href="/curriculum-vitae.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- Vite will bundle this togheter and it is what we want on this project -->
     <link rel="stylesheet" href="/src/reset.css" />
-    <link rel="stylesheet" href="/src/style.css" />
+    <link rel="stylesheet" href="/src/variables.css" />
+    <link rel="stylesheet" href="/src/base.css" />
+    <link rel="stylesheet" href="/src/content.css" />
 
     <title>resumoi</title>
   </head>
   <body>
     <div class="mainbg"></div>
-    <h1>resumoi</h1>
-    <p>What does the fox say?</p>
+    <main>
+      <section class="info">
+        <h1>jon doe</h1>
+        <aside class="contact">
+          <a>website</a>
+          <a>github</a>
+          <a>linkedin</a>
+          <span class="email">email</span>
+          <span class="location">remote</span>
+        </aside>
+      </section>
+      <section class="timeline">
+        <h2>Experience</h2>
+        <article class="timeline__card">
+          <h3 class="timeline__card__title">Javascript Software Engineer</h3>
+          <div class="timeline__card__subtitle">
+            <div class="period">February 2019 to Present</div>
+            <div class="employer-and-location">Meta, London</div>
+          </div>
+          <h4>Projects</h4>
+          <ul class="projects-list">
+            <li class="project">
+              <h5>Instagram stories</h5>
+              <div class="label">Responsabilities</div>
+              <ul class="responsibilities-list">
+                <li>Implement side scroll</li>
+                <li>Display number of views</li>
+              </ul>
+              <div class="label">Stack/Tools</div>
+              <ul class="stack-list">
+                <li>React</li>
+                <li>Graphql</li>
+              </ul>
+            </li>
+            <li class="project">
+              <h5>Like system</h5>
+              <div class="label">Responsabilities</div>
+              <ul class="responsibilities-list">
+                <li>Persist likes</li>
+                <li>Feed user likes into the timeline suggestion algorithm</li>
+              </ul>
+              <div class="label">Stack/Tools</div>
+              <ul class="stack-list">
+                <li>Node</li>
+                <li>Express</li>
+                <li>MongoDB</li>
+              </ul>
+            </li>
+          </ul>
+        </article>
+        <article class="timeline__card">
+          <h3 class="timeline__card__title">.NET Software Developer</h3>
+          <div class="timeline__card__subtitle">
+            <div class="period">Juy 2018 to January 2019</div>
+            <div class="employer-and-location">Microsoft, Oslo</div>
+          </div>
+          <h4>Projects</h4>
+          <ul class="projects-list">
+            <li class="project">
+              <h5>Teams desktop application</h5>
+              <div class="label">Responsabilities</div>
+              <ul class="responsibilities-list">
+                <li>Refactor room joining</li>
+              </ul>
+              <div class="label">Stack/Tools</div>
+              <ul class="stack-list">
+                <li>T-SQL</li>
+                <li>Entity Framework</li>
+              </ul>
+            </li>
+          </ul>
+        </article>
+        <h2>Skills</h2>
+        <article class="timeline__card">
+          <div class="other-skills">
+            <ul class="stack-list">
+              <li>TDD</li>
+              <li>Redis</li>
+            </ul>
+          </div>
+        </article>
+        <h2>Education</h2>
+        <article class="timeline__card">
+          <h3 class="timeline__card__title">Bachelor's in Computer Science</h3>
+          <div class="timeline__card__subtitle">
+            <div class="period">October 2005 to June 2009</div>
+            <div class="employer-and-location">
+              University of Cambridge, United Kingdom
+            </div>
+          </div>
+        </article>
+      </section>
+    </main>
     <!-- <script type="module" src="/src/main.ts"></script> -->
   </body>
 </html>

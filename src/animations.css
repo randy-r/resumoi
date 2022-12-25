@@ -1,0 +1,47 @@
+:root {
+  --animation-duration: 1000ms;
+}
+
+body {
+  perspective: 400px;
+}
+
+main {
+  opacity: 0.0;
+  transform-origin: center 20rem -200px;
+  animation-name: appear, enter-rotate-bottom;
+  transform-box: content-box;
+  animation-duration: var(--animation-duration);
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+}
+
+.contact a {
+  text-decoration-color: transparent;
+  animation-name: decorate-anchors;
+  animation-duration: var(--animation-duration);
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+}
+
+@keyframes appear {
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes decorate-anchors {
+  100% {
+    text-decoration-color: var(--c-primary-400);
+  }
+}
+
+@keyframes enter-rotate-bottom {
+  0% {
+    transform: rotate3d(1, 0, 0, -1deg);
+  }
+  100% {
+    transform: rotate3d(1, 0, 0, 0deg);
+  }
+}
+

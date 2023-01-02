@@ -4,7 +4,7 @@
   }
 
   .info {
-    margin-block: 0.0rem 0.75rem;
+    margin-block: 0rem 0.75rem;
   }
 
   h1 {
@@ -23,11 +23,17 @@
   }
 }
 
-@media only screen and (max-width: 32.5em) {
-main {
-  padding-inline: 0.5rem;
-
+@media only screen and (min-width: 1921px) {
+  .mainbg {
+    background-image: url('/noise-2.svg');
+    filter: contrast(100%) brightness(131%) grayscale(1);
+  }
 }
+
+@media only screen and (max-width: 32.5em) {
+  main {
+    padding-inline: 0.5rem;
+  }
   .timeline {
     column-gap: 1rem;
     grid-template-columns: 1fr;

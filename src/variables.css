@@ -5,4 +5,7 @@
   --c-surface-100: #fafafa;
   --c-primary-400: rgb(0, 111, 100);
   --c-neutral-050: hsl(0, 0%, 88%);
+
+  --project-space-end: 1rem;
+  --project-list-space-end: 1rem;
 }

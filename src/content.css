@@ -17,11 +17,14 @@ main {
 
 .contact {
   color: var(--c-primary-400);
-  
 }
 
 .contact-classic {
   text-align: end;
+}
+
+.contact-classic > span {
+  white-space: nowrap;
 }
 
 .info__name_and_social {
@@ -42,7 +45,6 @@ h3 {
 }
 
 .timeline__card__title {
-
   margin-block-start: 0.1rem;
 }
 
@@ -57,19 +59,18 @@ h3 {
   font-weight: 700;
 }
 
-
 .period {
   color: var(--c-text-300);
 }
 
 .project {
-  padding-block-end: 1rem;
+  padding-block-end: var(--project-space-end);
 }
 
 .projects-list {
   padding-block-start: 0rem;
   margin-inline-start: 1rem;
-  margin-block-end: 1rem;
+  margin-block-end: var(--project-list-space-end);
 }
 
 .timeline__card h4,
@@ -94,6 +95,10 @@ h3 {
   margin-block-end: 5rem;
 }
 
+.company-desc {
+  margin-block-end: 1rem;
+}
+
 .responsibilities-list li::before {
   content: '●';
   display: inline-block;
@@ -105,9 +110,6 @@ h3 {
   color: var(--c-primary-400);
 }
 
-.project .stack-list {
-  margin-inline-start: 0.5em;
-}
 .stack-list {
   display: inline-flex;
   gap: 0.2rem;
@@ -121,4 +123,18 @@ h3 {
   padding: 0.15em 0.3em;
   font-size: 0.89rem;
   letter-spacing: 0.014em;
+}
+
+.project .stack-list {
+  margin-inline-start: 0.5em;
+}
+
+/* .timeline__card--with-general-stack-list .stack-list { */
+.timeline__card:not(:last-child) > .stack-list {
+  margin-block-end: calc(var(--project-space-end) + var(--project-list-space-end));
+}
+
+.timeline__card--with-general-stack-list .projects-list {
+  /* background-color: hotpink; */
+  margin-block-end: 0;
 }

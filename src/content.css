@@ -51,8 +51,14 @@ h3 {
 .timeline__card__subtitle {
   color: var(--c-text-300);
   display: flex;
-  gap: 3rem;
+  /* gap: 3rem; */
   margin-block-end: 1rem;
+  flex-wrap: wrap;
+}
+
+.timeline__card__subtitle .period {
+  white-space: nowrap;
+  margin-inline-end: 3rem;
 }
 
 .timeline__card h5 {
@@ -133,7 +139,9 @@ h3 {
 
 /* .timeline__card--with-general-stack-list .stack-list { */
 .timeline__card:not(:last-child) > .stack-list {
-  margin-block-end: calc(var(--project-space-end) + var(--project-list-space-end));
+  margin-block-end: calc(
+    var(--project-space-end) + var(--project-list-space-end)
+  );
 }
 
 .timeline__card--with-general-stack-list .projects-list {
